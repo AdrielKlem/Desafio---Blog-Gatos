@@ -7,12 +7,17 @@
 :root {
   font-size: 62.5%;
 
-  --color-base-white: #fff;
-  --color-base-gray-100: #f4fcff;
-  --color-base-blue-100: #387e96;
-  --color-base-blue-200: #065e7c;
+  --hsl: 195;
+
+  --color-base-white: hsl(0, 0%, 100%);
+  --color-base-gray-100: hsl(var(--hsl), 100%, 98%);
+  --color-base-blue-100: hsl(var(--hsl)), 46%, 40%);
+  --color-base-blue-200: hsl(var(--hsl), 91%, 25%);
 }
 
 body {
   font-size: 1.6rem;
 }
+
+
+header 
