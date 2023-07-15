@@ -3,3 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  font-size: 62.5%;
+
+  --color-base-white: #fff;
+  --color-base-gray-100: #f4fcff;
+  --color-base-blue-100: #387e96;
+  --color-base-blue-200: #065e7c;
+}
+
+body {
+  font-size: 1.6rem;
+}
