@@ -11,7 +11,7 @@
 
   --color-base-white: hsl(0, 0%, 100%);
   --color-base-gray-100: hsl(var(--hsl), 100%, 98%);
-  --color-base-blue-100: hsl(var(--hsl)), 46%, 40%);
+  --color-base-blue-100: hsl(var(--hsl), 46%, 40%);
   --color-base-blue-200: hsl(var(--hsl), 91%, 25%);
 }
 
@@ -21,29 +21,96 @@ body {
   width: 100vw;
 }
 
+#page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
 
 header {
-    background-color: var(--color-base-blue-200);
+  background-color: var(--color-base-blue-200);
 
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+header label {
+  /* Label desaparecer na barra de pesquisa */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
 }
 
 header #logo {
-    width: 4rem;
-    height: 4rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 header img {
-    width: 4.2rem;
-    height: 4.2rem;
+  width: 4.2rem;
+  height: 4.2rem;
 }
 
-#artSec img {
-    width: 15rem;
+header {
+}
 
-    aspect-ratio:4/3;
+/* Main */
+
+main .text,
+main #artSec {
+  padding: 0 2rem;
+}
+
+main #foto-principal {
+  width: 100%;
+}
+
+main .top {
+  margin: 3rem 0;
+}
+
+/* Button */
+
+.button {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  background-color: var(--color-base-blue-200);
+
+  border: none;
+  border-radius: 50%;
+
+  width: 3.5rem;
+  height: 3.5rem;
+
+  display: block;
+}
+
+.button::before {
+  background-image: url(./assets/button/thumb-up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button::after {
+  background-image: url(./assets/button/thumb-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Artigo */
+
+#artSec img {
+  width: 15rem;
+
+  aspect-ratio: 4/3;
 }
