@@ -17,7 +17,33 @@
 
 body {
   font-size: 1.6rem;
+
+  width: 100vw;
 }
 
 
-header 
+header {
+    background-color: var(--color-base-blue-200);
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+header #logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+header img {
+    width: 4.2rem;
+    height: 4.2rem;
+}
+
+#artSec img {
+    width: 15rem;
+
+    aspect-ratio:4/3;
+}
