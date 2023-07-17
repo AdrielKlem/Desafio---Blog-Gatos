@@ -22,11 +22,19 @@ body {
 }
 
 #page {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+
+  height: 100vh;
 }
 
 /* Header */
+.container {
+  width: min(112rem, 100%);
+
+  padding: 1.6rem 3.2rem;
+  margin: 0 auto;
+}
 
 header {
   background-color: var(--color-base-blue-200);
@@ -35,7 +43,10 @@ header {
 
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   gap: 2.4rem;
+
+  padding: 2rem;
 }
 
 header label {
@@ -46,34 +57,68 @@ header label {
   position: absolute;
 }
 
+header form {
+  flex: 1;
+}
+
 header #logo {
   width: 4rem;
   height: 4rem;
 }
 
-header img {
+header .avatar {
   width: 4.2rem;
   height: 4.2rem;
+
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-header {
+.input-wrapper #search {
+  width: 100%;
+  height: 1.6rem;
+  padding: 1.4rem;
+
+  background-color: var(--color-base-blue-100);
+
+  border: none;
+  border-radius: 0.6rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.input-wrapper #search::placeholder {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6rem; /* 16px */
+
+  color: var(--color-base-white);
 }
 
 /* Main */
 
-main .text,
-main #artSec {
+.container-main {
   padding: 0 2rem;
 }
 
 main #foto-principal {
   width: 100%;
+
+  display: block;
 }
 
 main .top {
   margin: 3rem 0;
 }
 
+main .top h1 {
+  margin-bottom: 2rem;
+}
+
+.text > p:nth-child(1) {
+  margin-bottom: 3rem;
+}
 /* Button */
 
 .button {
@@ -109,8 +154,14 @@ main .top {
 
 /* Artigo */
 
+#artSec {
+  margin-top: 3rem;
+}
+
 #artSec img {
   width: 15rem;
 
   aspect-ratio: 4/3;
 }
+
+#artSec h2;
