@@ -21,6 +21,11 @@ body {
   width: 100vw;
 }
 
+html,
+body,
+input {
+}
+
 #page {
   background-color: hsl(var(--hsl), 91%, 25%);
 
@@ -30,7 +35,6 @@ body {
   height: 100vh;
 }
 
-/* Header */
 .container {
   width: min(112rem, 100%);
 
@@ -38,7 +42,8 @@ body {
   margin: 0 auto;
 }
 
-header {
+/* Header */
+.container-header {
   background-color: var(--color-base-blue-200);
 
   width: 100%;
@@ -161,20 +166,53 @@ main .top h1 {
 /* Artigo */
 
 #artSec {
-  margin-top: 3rem;
+  margin: 3rem 0;
+}
+
+#artSec h2 {
+  margin-bottom: 3.2rem;
+}
+
+#artSec .art-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3.2rem;
+}
+
+#artSec .art {
+  display: grid;
+
+  grid-template-areas:
+    "A B B"
+    "A C C";
+
+  row-gap: 1rem;
+  column-gap: 1.6rem;
 }
 
 #artSec img {
   width: 15rem;
+  height: 8.4rem;
+  object-fit: cover;
 
-  aspect-ratio: 4/3;
+  grid-area: A;
 }
 
-#artSec h2 {
+#artSec h3 {
+  grid-area: B;
 }
 
 /* Footer */
 footer {
   width: 100%;
   height: 6.4rem;
+  padding: 1.6rem;
+
+  background-color: hsl(var(--hsl), 46%, 40%);
+  color: var(--color-base-white);
+
+  display: flex;
+  place-items: center;
+  place-content: center;
 }
