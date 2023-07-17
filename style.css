@@ -24,6 +24,7 @@ body {
 html,
 body,
 input {
+  font-family: "Mulish", sans-serif;
 }
 
 #page {
@@ -192,11 +193,12 @@ main .top h1 {
 }
 
 #artSec img {
-  width: 15rem;
-  height: 8.4rem;
+  max-width: 15rem;
+  height: auto;
   object-fit: cover;
-
   grid-area: A;
+
+  aspect-ratio: 4/3;
 }
 
 #artSec h3 {
