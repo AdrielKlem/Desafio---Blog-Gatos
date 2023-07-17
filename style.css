@@ -19,6 +19,8 @@ body {
   font-size: 1.6rem;
 
   width: 100vw;
+
+  overflow-x: hidden;
 }
 
 html,
@@ -37,7 +39,7 @@ input {
 }
 
 .container {
-  width: min(112rem, 100%);
+  width: min(70rem, 100%);
 
   padding: 1.6rem 3.2rem;
   margin: 0 auto;
@@ -48,12 +50,12 @@ input {
   background-color: var(--color-base-blue-200);
 
   width: 100%;
+  height: 10rem;
 
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 2.4rem;
-
+  gap: 3rem;
   padding: 2rem;
 }
 
@@ -63,10 +65,6 @@ header label {
   height: 1px;
   overflow: hidden;
   position: absolute;
-}
-
-header form {
-  flex: 1;
 }
 
 header #logo {
@@ -98,6 +96,7 @@ header .avatar {
   color: var(--color-base-white);
 
   transition: outline 0.2s;
+  max-width: 70rem;
 }
 
 .input-wrapper #search:focus {
@@ -120,6 +119,18 @@ header .avatar {
 
 main {
   background-color: var(--color-base-white);
+}
+
+main p {
+  font-size: 1.2rem;
+}
+
+main .art h3 {
+  font-size: 1.4rem;
+}
+
+main .art p {
+  font-size: 1rem;
 }
 
 main #foto-principal {

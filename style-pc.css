@@ -1,0 +1,24 @@
+@media (min-width: 700px) {
+  header {
+    margin-bottom: 4rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+      "A A C"
+      "B B C";
+  }
+
+  main #foto-principal {
+    grid-area: A;
+  }
+
+  main #content {
+    grid-area: B;
+  }
+
+  main #artSec {
+    grid-area: C;
+  }
+}
