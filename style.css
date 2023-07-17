@@ -22,6 +22,8 @@ body {
 }
 
 #page {
+  background-color: hsl(var(--hsl), 91%, 25%);
+
   display: grid;
   grid-template-rows: max-content 1fr max-content;
 
@@ -102,6 +104,10 @@ header .avatar {
   padding: 0 2rem;
 }
 
+main {
+  background-color: hsl(var(--hsl), 100%, 98%);
+}
+
 main #foto-principal {
   width: 100%;
 
@@ -164,4 +170,11 @@ main .top h1 {
   aspect-ratio: 4/3;
 }
 
-#artSec h2;
+#artSec h2 {
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 6.4rem;
+}
