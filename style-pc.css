@@ -8,6 +8,8 @@
     grid-template-areas:
       "A A C"
       "B B C";
+
+    padding: 2rem;
   }
 
   main #foto-principal {
@@ -20,5 +22,19 @@
 
   main #artSec {
     grid-area: C;
+
+    width: 32rem;
+  }
+
+  main #artSec h2 {
+    font-size: 1.6rem;
+  }
+
+  main .art img {
+    width: 100%;
+  }
+
+  main #artSec h3 {
+    font-size: 1.2rem;
   }
 }
